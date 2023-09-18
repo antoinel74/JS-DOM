@@ -1,7 +1,6 @@
 let students = [
   "Alexandre VDW",
   "Alexandre Vens",
-  "Antoine Lansman",
   "Bastien Venturi",
   "Carole Gérard",
   "Elisabeth Leyders",
@@ -47,8 +46,15 @@ function getTextColor(backgroundColor) {
   return brightness < 128 ? "white" : "black";
 }
 
+// Shuffle The Array
+
+function rdSort() {
+  return Math.random() - 0.5; //
+}
+
 // Create a new section in the doc
 const studentSection = document.createElement("section");
+students.sort(rdSort);
 
 // Writing in the DOM
 students.forEach(function (studentName) {
@@ -62,6 +68,4 @@ students.forEach(function (studentName) {
 });
 
 // Append in document in the right order (before the footer)
-document.body.appendChild(studentSection);
-const footer = document.querySelector("footer");
-document.body.insertBefore(studentSection, footer);
+document.querySelector("article").appendChild(studentSection);
