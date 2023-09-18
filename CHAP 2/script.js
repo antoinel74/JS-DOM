@@ -28,7 +28,22 @@ const pClass = document.querySelectorAll("p"); // Selecting all the p tag in the
 pClass.forEach(function (paragraph) {
   const className = paragraph.className; // Extracting classname
   const textContent = paragraph.textContent; // Extracting content
-  console.log(`Class name : ${className}, Text content : ${textContent}`); // Displaying both value in the console
+  console.log(`Class : ${className}, Text : ${textContent}`); // Displaying both value in the console
 });
 
 /* EX 4 : */
+function randomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+// Random color Function from Chap 1
+
+const colorTxt = document.querySelectorAll("p:not([class])"); // Selecting all P without defined class
+colorTxt.forEach(function (text) {
+  let newColor = randomColor();
+  text.style.color = newColor;
+}); // init newColor variable from calling the function, applying the newColor to all the selected paragraphs.
