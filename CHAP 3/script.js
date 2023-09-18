@@ -25,9 +25,9 @@ let students = [
 
 // Generating random HEX color //
 function randomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
@@ -47,9 +47,8 @@ function getTextColor(backgroundColor) {
 }
 
 // Shuffle The Array
-
 function rdSort() {
-  return Math.random() - 0.5; //
+  return Math.random() - 0.5;
 }
 
 // Create a new section in the doc
