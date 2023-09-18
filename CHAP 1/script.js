@@ -26,7 +26,7 @@ function switchBg() {
 switchBg("hotpink");
 
 /* EX 4 displaying all element of the body */
-const bodyElements = [...document.body.children]; // Making the whole body an array so i can use the for ... of loop .
+const bodyElements = [...document.body.children]; 
 for (let element of bodyElements) {
   console.log(element);
 }
