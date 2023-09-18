@@ -23,7 +23,6 @@ let students = [
   "Virgine Dourson",
 ];
 
-// Generating random HEX color //
 function randomColor() {
   let letters = "0123456789ABCDEF";
   let color = "#";
@@ -34,8 +33,6 @@ function randomColor() {
 }
 let newColor = randomColor();
 
-// Convert HEX Color into RGB to find brightness //
-// + put a brightness condition (references values find on internet) to display white if bg is dark and black if bg is light
 function getTextColor(backgroundColor) {
   const rgb = parseInt(backgroundColor.slice(1), 16);
   const r = (rgb >> 16) & 0xff;
@@ -51,11 +48,9 @@ function rdSort() {
   return Math.random() - 0.5;
 }
 
-// Create a new section in the doc
 const studentSection = document.createElement("section");
 students.sort(rdSort);
 
-// Writing in the DOM
 students.forEach(function (studentName) {
   const newParagraph = document.createElement("p");
   newParagraph.textContent = studentName;
@@ -66,5 +61,4 @@ students.forEach(function (studentName) {
   studentSection.appendChild(newParagraph);
 });
 
-// Append in document in the right order (before the footer)
 document.querySelector("article").appendChild(studentSection);
