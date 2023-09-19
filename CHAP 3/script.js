@@ -47,9 +47,7 @@ function getTextColor(backgroundColor) {
 }
 
 // Shuffle The Array
-function rdSort() {
-  return Math.random() - 0.5;
-}
+const rdSort = () => Math.random() - 0.5;
 
 // Create a new section in the doc
 const studentSection = document.createElement("section");

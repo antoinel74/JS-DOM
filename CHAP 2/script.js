@@ -1,11 +1,11 @@
 /* EX 1 */
 
-function addTitle() {
+const addTitle = () => {
   const titles = document.querySelectorAll(".important");
   titles.forEach(function (element) {
     element.setAttribute("title", "This is an important element");
   });
-}
+};
 
 // In this function I first init a const selecting all the .important class element on my HTML
 // For each of these elements i'm going to add an attribute title with the value "This is an important elements "

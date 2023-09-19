@@ -10,19 +10,19 @@ document.title = "Modifying the DOM";
 console.log(document.title);
 
 /* EX3 : Generating BG color */
-function randomColor() {
+const randomColor = () => {
   let letters = "0123456789ABCDEF";
   let color = "#";
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
-}
+};
 
-function switchBg() {
+const switchBg = () => {
   let newColor = randomColor();
   document.body.style.backgroundColor = newColor;
-}
+};
 switchBg("hotpink");
 
 /* EX 4 displaying all element of the body */
