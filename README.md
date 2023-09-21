@@ -1,6 +1,5 @@
 # Js-DOM
 
-## Chapters:
 ### Chapter 1 
   - The DOM tree
   - Nodes
