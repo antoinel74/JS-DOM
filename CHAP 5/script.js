@@ -69,3 +69,12 @@ window.addEventListener("keydown", function (event) {
     }
   }
 });
+
+// Display the color class in an alert box when click on generated displayedsquare //
+const disSquares = document.querySelector(".displayedsquare-wrapper");
+disSquares.addEventListener("click", function (event) {
+  if (event.target.classList.contains("displayedsquare")) {
+    const colorClass = event.target.classList[1];
+    alert(colorClass);
+  }
+});
