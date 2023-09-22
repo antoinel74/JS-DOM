@@ -1,37 +1,40 @@
-body{
+body {
   margin: auto;
-  transition: .3s;
+  transition: 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.actionsquare, .displayedsquare{
+.actionsquare,
+.displayedsquare {
   margin: 25px;
   height: 50px;
   width: 50px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.actionsquare:hover{
+.actionsquare:hover {
   transform: scale(1.5);
 }
 
-.green{
+.green {
   background-color: lime;
 }
 
-.violet{
+.violet {
   background-color: magenta;
 }
 
-.orange{
+.orange {
   background-color: orange;
 }
 
-.actionsquare-wrapper, .displayedsquare-wrapper{
+.actionsquare-wrapper,
+.displayedsquare-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-main{
+main {
   max-width: 1000px;
   margin: 100px auto;
 }

@@ -7,7 +7,6 @@ const getElapsedTime = () => {
 // Duplication + log function
 const logList = document.querySelector("ul");
 const clickOnSquare = (e) => {
-  console.log(getElapsedTime());
   const colorClass = e.target.classList[1];
   const newSquare = document.createElement("div");
   newSquare.classList.add("displayedsquare", colorClass);
@@ -46,5 +45,27 @@ window.addEventListener("keydown", function (event) {
     );
     newSpaceLog.appendChild(spaceLog);
     logList.appendChild(newSpaceLog);
+  }
+});
+
+// Clear the logList when hitting L (id 76) //
+window.addEventListener("keydown", function (event) {
+  if (event.which === 76) {
+    while (logList.firstChild) {
+      logList.removeChild(logList.firstChild);
+    }
+  }
+});
+
+// The while loop delete all firstChild element one by one until there is no more left //
+// More efficient than my initial solution logList.remove() which delete the whole <ul> container //
+
+// Erases the generated square when hitting S (id 83) //
+const squareWrapper = document.querySelector(".displayedsquare-wrapper");
+window.addEventListener("keydown", function (event) {
+  if (event.which === 83) {
+    while (squareWrapper.firstChild) {
+      squareWrapper.removeChild(squareWrapper.firstChild);
+    }
   }
 });
