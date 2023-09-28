@@ -31,7 +31,10 @@ inputPasswrd.addEventListener("keyup", checkPasswrd);
 secondPasswrd.addEventListener("keyup", checkPasswrd);
 
 function checkPasswrd() {
-  if (inputPasswrd.value === secondPasswrd.value) {
+  if (
+    inputPasswrd.value === secondPasswrd.value &&
+    inputPasswrd.value.length >= 6
+  ) {
     secondPasswrd.style.backgroundColor = "#BCE29E";
   } else {
     secondPasswrd.style.backgroundColor = "#FF8787";
