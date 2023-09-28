@@ -4,8 +4,8 @@ let displayName = document.getElementById("display-firstname");
 
 inputName.addEventListener("keyup", updateName);
 
-function updateName(e) {
-  displayName.textContent = e.target.value;
+function updateName() {
+  displayName.textContent = inputName.value;
 }
 
 // 2. Display the section if age >= 18
