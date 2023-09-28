@@ -13,9 +13,16 @@
 
 ### Chapter 3
 
-- The `createElement` method
-- Inserting node
+- Dynamic inserts
 
 ### Chapter 4
 
 - Navigate in the DOM Tree
+
+### Chapter 5
+
+- Events
+
+### Chapter 6
+
+- Forms
