@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#calendar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 280px;
+  border-radius: 35px;
+  background-color: white;
+  color: grey;
+  border: 3px solid rgba(87, 87, 87, 0.356);
+}
+#calendar #calendar_day, #calendar #calendar_year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aa4646;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+  height: 60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#calendar #calendar_date,
+#calendar #calendar_month {
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+#calendar #calendar_year {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#display-clock {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(74, 70, 70);
+}
+#display-clock #seconds {
+  font-size: 0.6em;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
