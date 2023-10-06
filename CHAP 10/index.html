@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script defer src="script.js"></script>
   </head>
   <body>
-    <button id="load-btn">Load content</button>
+    <main>
+      <label for="name">Name : </label>
+      <input type="text" id="name" name="name" />
+      <button id="import-btn">Load</button>
+      <select id="select-country">
+        <option class="input-country" value="US">USA</option>
+        <option class="input-country" value="BE">Belgique</option>
+        <option class="input-country" value="AR">Argentina</option>
+      </select>
+      <div id="results"></div>
+    </main>
+    <script type="module" src="script2.js"></script>
+    <script type="module" src="localstorage.js"></script>
   </body>
 </html>
