@@ -56,9 +56,12 @@ main {
 }
 
 #display-clock {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 900;
   color: rgb(74, 70, 70);
+}
+#display-clock #minutes {
+  margin: 0 -8px;
 }
 #display-clock #seconds {
   font-size: 0.6em;
